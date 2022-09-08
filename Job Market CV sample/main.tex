@@ -1,0 +1,100 @@
+\documentclass[letterpaper,12pt]{article}
+%\usepackage{apacite}
+
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=apa,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+
+\bibliography{papers.bib}
+
+\def\theme{black}
+
+% More predefined colors can be found in
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+
+\begin{document}
+
+% Heading
+\headinginline{}{
+{\Large{\underline{{\textbf{JUAN PABLO URIBE}}}}}
+    \website{www.juanpablo-uribe.com} \\
+    \email{juan\_uribe@brown.edu}
+   % LinkedIn: \linkedin{name-surname} \\
+    %GitHub: \github{example}
+}
+
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+\vspace{0.2cm}
+\begin{center}
+    {\large{ \textbf{BROWN UNIVERSITY}
+}}
+\vspace{0.1cm}
+\end{center}
+
+\begin{tabular}{llr}
+Placement Director: Toru Kitagawa \hspace{0.3cm}   &  \email{toru\_kitagawa@brown.edu} &       \hspace{1cm} 401-863-3688\\
+Graduate Administrator: Angelica Spertini \hspace{0.3cm} &       \email{angelica\_spertini@brown.edu}      &401-863-2465
+\end{tabular}
+\subsubsection*{\textbf{Office Contact Information}}
+Department of Economics, Box B \\
+Brown University \\
+Providence, Rhode Island 02912\\
+phone: {+1 (203) 4029707}
+% Page One
+
+\subsection*{References}
+
+\begin{tabular}{ll}
+   Professor \href{https://afosterri.org/afoster/}{\textbf{Andrew Foster}} & \hspace{4cm}  Professor \textbf{\href{https://matthewturner.org}{Matthew Turner}}\\
+Department of Economics, Box B &\hspace{4cm} Department of Economics, Box B \\
+Brown University&\hspace{4cm}  Brown University \\
+Providence, Rhode Island 02912&\hspace{4cm} Providence, Rhode Island 02912 \\
+  \email{afoster@brown.edu}
+&\hspace{4cm} \email{matthew\_turner@brown.edu}\\
+\\
+Professor  \href{https://www.brown.edu/Research/Shapiro/}{\textbf{Jesse Shapiro}} & \hspace{4cm}  Professor  \textbf{\href{https://vivo.brown.edu/display/kchay}{Kenneth Chay}}\\ 
+Department of Economics, Box B &\hspace{4cm} Department of Economics, Box B \\
+Brown University&\hspace{4cm} Brown University \\
+Providence, Rhode Island 02912&\hspace{4cm} Providence, Rhode Island 02912 \\
+\email{jesse\_shapiro\_1@brown.edu} &\hspace{4cm} \email{Kenneth\_Chay@brown.edu}\\
+\end{tabular}
+
+\import{sections/}{education.tex}
+
+\section{Teaching and Research Fields}
+Urban Economics, Development Economics and Labor Economics
+
+\newpage
+
+\section{Job Market Paper}
+\href{https://juanpablo-uribe.github.io/Uribe_Brown_JMP_Housing_Subsidies_2021.pdf}{\textbf{Equilibrium Effects of Housing Subsidies: Evidence from a Policy Notch in Colombia}}\\
+\textbf{\textit{Abstract}}\\
+This paper studies how the housing market in Colombia responds to policies aimed at increasing homeownership among low-income households. Private sector developers received tax incentives to build houses priced below a cutoff, and households received subsidies to buy houses below the same cutoff. The paper models an equilibrium between heterogeneous developers building differentiated housing and heterogeneous households purchasing homes. The model is estimated using bunching around the price cutoff induced by the policies. To benefit from the policy, households buy housing units up to 30 percent smaller and bunch at the policy cutoff. A counterfactual simulation shows that without supply-side incentives, developers may exit the market; their profits would be 14 percent lower.
+
+\import{sections/}{projects.tex}
+\import{sections/}{experience.tex}\newpage
+\import{sections/}{teaching.tex}
+\import{sections/}{awards.tex}
+
+
+% Page Two
+
+% \sidebyside
+
+%
+
+
+\import{sections/}{other.tex}
+\vfill
+Updated on \today
+\end{document}
